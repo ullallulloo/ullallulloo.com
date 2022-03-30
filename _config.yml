@@ -1,0 +1,30 @@
+title: Ullallulloo
+author:
+  name: Ullallulloo
+  email: ullallulloo@gmail.com
+  site: https://ullallulloo.com
+url: https://ullallulloo.com
+themeColor: "#870087"
+
+googleFonts:
+  - Press+Start+2P
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+permalink: /:name
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap

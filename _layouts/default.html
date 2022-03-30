@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="/favicon.png">
+		<meta charset="UTF-8">
+		{% if site.author %}
+		<meta name="author" content="{{ site.author.name }}">
+		{% endif %}
+		{% if site.themeColor %}
+		<meta name="theme-color" content="{{ site.themeColor }}" />
+		{% endif %}
+		<title>{% if page.url == "/" %}{{ site.title | xml_escape }}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
+		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/style.css">
+		{% for font in site.googleFonts %}
+		<link href="https://fonts.googleapis.com/css?family={{ font }}&display=swap" rel="stylesheet">
+		{% endfor %}
+		{% for script in layout.scripts %}
+		<script src="{{ script }}" defer></script>
+		{% endfor %}
+		{% for script in page.scripts %}
+		<script src="{{ script }}" defer></script>
+		{% endfor %}
+	</head>
+	<body>
+		{% include header.html %}
+		{% include nav.html %}
+		<main>
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</body>
+</html>
