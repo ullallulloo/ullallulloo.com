@@ -15,11 +15,20 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "game_recommendations"
+    values:
+      layout: "game-recommendation"
 
 collections:
   pages:
     output: true
     permalink: /:name
+  game_recommendations:
+    output: true
+    permalink: /game-recommendations/:name
 
 permalink: /:name
 
