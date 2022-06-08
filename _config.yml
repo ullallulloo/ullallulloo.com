@@ -21,6 +21,12 @@ defaults:
       type: "game_recommendations"
     values:
       layout: "game-recommendation"
+  -
+    scope:
+      path: ""
+      type: "game_tips"
+    values:
+      layout: "game-tip"
 
 collections:
   pages:
@@ -29,6 +35,9 @@ collections:
   game_recommendations:
     output: true
     permalink: /game-recommendations/:name
+  game_tips:
+    output: true
+    permalink: /game-tips/:name
 
 permalink: /:name
 
