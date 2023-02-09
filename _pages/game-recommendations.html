@@ -1,13 +1,11 @@
 ---
 ---
 
-<section>
-	<h2>Game Recommendations</h2>
-	<ul>
-		{% for game in site.game_recommendations %}
-			<li>
-				<a href="{{ game.url }}">{{ game.title }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-</section>
+<h2>Game Recommendations</h2>
+<ul>
+	{% for game in site.game_recommendations %}
+		<li>
+			<a href="{{ game.url }}">{{ game.title }}</a>
+		</li>
+	{% endfor %}
+</ul>
