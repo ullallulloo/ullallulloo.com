@@ -18,6 +18,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "game_questions"
+    values:
+      layout: "game-question"
+  -
+    scope:
+      path: ""
       type: "game_recommendations"
     values:
       layout: "game-recommendation"
@@ -31,7 +37,10 @@ defaults:
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:path
+  game_questions:
+    output: true
+    permalink: /game-questions/:path
   game_recommendations:
     output: true
     permalink: /game-recommendations/:name
@@ -39,7 +48,7 @@ collections:
     output: true
     permalink: /game-tips/:name
 
-permalink: /:name
+permalink: /:path
 
 sass:
   style: compressed
