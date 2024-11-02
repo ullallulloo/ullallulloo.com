@@ -116,6 +116,12 @@ p:first-child {
 p:last-child {
 	margin-bottom: 0;
 }
+section img {
+	display: block;
+	margin: auto;
+	max-width: unquote("min(calc(100vw - 30px), 670px)");
+	max-height: 500px;
+}
 button {
 	background-color: var(--accent-color);
 	border: none;
