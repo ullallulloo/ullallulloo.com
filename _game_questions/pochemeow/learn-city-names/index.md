@@ -10,7 +10,7 @@ One may think this involves tapping the cities or has to do with the newspaper o
 
 See, just looking at a city normally doesn't show its name:
 
-![Enemy city without name](enemy-name.png)
+![Enemy city without name](enemy-city.png)
 
 However, if you zoom out, the names appear, and you will fulfill the goal:
 
