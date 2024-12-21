@@ -20,15 +20,15 @@ foreach ($country_files as $country_file) {
 
 usort($data, fn($a, $b) => $a['hue'] <=> $b['hue']);
 
-echo '<table>';
-echo '<tr><th>Color</th><th>Name</th>';
+echo '<table class="sortable" cellpadding="5">';
+echo '<thead><tr><th>Color</th><th>Name</th></tr></thead><tbody>';
 foreach ($data as $row) {
 	echo '<tr>';
-	echo '<td style="background-color:'.$row['color'].'" data-color="'.$row['color'].'">&nbsp;</td>';
+	echo '<td style="background-color:'.$row['color'].'" data-color="'.$row['color'].'" data-sort="'.$row['hue'].'">&nbsp;</td>';
 	echo '<td>'.$row['name'].'</td>';
 	echo '</tr>';
 }
-echo '</table>';
+echo '</tbody></table>';
 
 function get_hue($rgb): float|null {
 	$min = min($rgb);

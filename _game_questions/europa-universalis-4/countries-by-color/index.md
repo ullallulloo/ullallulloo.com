@@ -2,6 +2,7 @@
 title: What colors are countries?
 game: Europa Universalis 4
 scripts:
+  - https://cdn.jsdelivr.net/npm/sortable-tablesort@4.0.0/dist/sortable.min.js
   - copy_color.js
 ---
 
