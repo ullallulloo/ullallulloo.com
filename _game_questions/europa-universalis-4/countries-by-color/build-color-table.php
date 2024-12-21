@@ -3,10 +3,38 @@
 $data = [];
 
 $country_files = glob('C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\common\countries\*.txt');
+
+$tag_file = file_get_contents('C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\common\country_tags\00_countries.txt');
+// BYZ	= "countries/ByzantineEmpire.txt"
+//              to
+// [[...], ['BYZ'], ['ByzantineEmpire']]
+preg_match_all("/([A-Z]{3})\s*=\s*\"countries\/(.+)\.txt\"/", $tag_file, $tag_matches);
+// [[...], ['BYZ'], ['ByzantineEmpire']]
+//          to
+// ['ByzantineEmpire' => 'BYZ']
+$tag_matches = array_combine($tag_matches[2], $tag_matches[1]);
+
+$name_files = glob('C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\localisation\*_l_english.yml');
+$name_file = array_reduce($name_files, fn($carry, $item) => $carry . file_get_contents($item), '');
+// BYZ:0 "Byzantium"
+//     to
+// [[...], ['BYZ'], ['Byzantium']]
+preg_match_all("/\s([A-Z]{3}):\d\s*\"(.+)\"/", $name_file, $name_matches);
+// [[...], ['BYZ'], ['Byzantium']]
+//          to
+// ['BYZ' => 'Byzantium']
+$name_matches = array_combine($name_matches[1], $name_matches[2]);
+
 foreach ($country_files as $country_file) {
-	$name = basename($country_file, ".txt");
-	if (preg_match("/_|\d/", $name))
+	$file_basename = basename($country_file, ".txt");
+	if (preg_match("/_|\d/", $file_basename))
 		continue;
+	if (!isset($tag_matches[$file_basename]))
+		continue;
+	$tag = $tag_matches[$file_basename];
+	if (!isset($name_matches[$tag]))
+		exit(1);
+	$name = $name_matches[$tag];
 	$country_data = file_get_contents($country_file);
 	$color = preg_match("/color\s*=\s*{\s*(\d+\s+\d+\s+\d+)\s*}/", $country_data, $matches);
 	$color = preg_split("/\s+/", $matches[1]);
