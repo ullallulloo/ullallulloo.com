@@ -147,6 +147,14 @@ button:active {
 li:not(:last-child) {
 	margin-bottom: 8px;
 }
+table {
+	border-collapse: collapse;
+	margin: 16px 0;
+}
+th, td {
+	border: 2px solid var(--text-color);
+	padding: 5px 8px;
+}
 footer {
 	padding: 20px;
 }
