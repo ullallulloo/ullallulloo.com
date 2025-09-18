@@ -17,6 +17,8 @@ One helpful summary tidbit though is how many you have to buy to get 50% chances
 * Very Rare: 22 treasures
 * Ultra Rare: 44 treasures
 
+Also note that the chances for that rarity reset after getting one. So if you one specific Rare item when there are two in the chest, you have to open 25 chests on average to get the specific item you want. Basically, multiply the above number of treasures by the number of items of that rarity.
+
 {::nomarkdown}
 
 <form onsubmit="return false;">
