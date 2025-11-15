@@ -17,8 +17,12 @@ It's also worth noting that naval levies are destroyed when disbanded, not retur
 
 ### 3. Your estates are upset
 
-This is a huge issue that is hard to notice if you are not paying attention. Under fuedalism, your nobles provide the levies from the peasants. Keeping the nobility happy is therefore extremely important. If your nobles are under 50% satisfaction, they will refuse to provide the levies, and you will only be able to raise a paltry number of troops. Likewise, the peasants have less power, but if they drop below 25% satisfaction, they will also refuse to fight. Ensuring you keep your estates happy enough is crucial to being able to field a strong army.
+This is a huge issue that is hard to notice if you are not paying attention. Levies are composed of soldiers from each of your estates. Yet if your estates are under 25% satisfaction, they will refuse to join the levies. This is most devastating with your peasants, as they typically comprise over 90% of your levies. If they are disloyal, you will therefore only be able to raise a paltry number of troops. The other estates will affect it a bit but are much less important. The distant second would be your nobles, as they are most countries' only source of cavalry and are the highest quality troops, even if they are only a few percent of your army. Ensuring you keep your estates happy enough is crucial to being able to field a strong army.
 
 ### 4. You lack control
 
 Levies, like everything else in EU5, are tied to your level of control in provinces. If you have no control, you get no levies. You should always be able to maintain a good level of control over your capital province, but most of your country will just not do a lot for you until you invent and invest in better roads throughout it. If you need more troops from these places, consider splitting them off into vassals or fiefdoms that can maintain control there to raise their own armies.
+
+### 5. You are discriminating against your levies' culture
+
+People that are discriminated against are less likely to want to fight for you. Pops that are not of a primary or accepted culture only raise a quarter as many levies as those that are accepted. If you have large populations of unaccepted cultures, you will find your levy numbers severely limited. Consider accepting more cultures or assimilating the pops to your primary culture to improve your levy numbers.
