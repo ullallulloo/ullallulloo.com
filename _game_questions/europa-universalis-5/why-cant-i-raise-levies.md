@@ -11,7 +11,7 @@ This is a bit of a silly one, but in case you are confused, you cannot raise lev
 
 ### 2. Your province's levies are not replenished enough
 
-If you have recently fought a costly war or even just had a transport fleet sink, your levies may be too depleted to raise. [Levies take 25 years to fully replenish after being wiped out.](how-long-do-levies-take-to-replenish/) You cannot raise even partial levies from a province until they are at least 50% replenished. You might just have to wait a long time.
+If you have recently fought a costly war or even just had a transport fleet sink, your levies may be too depleted to raise. [Levies take 20 years to fully replenish after being wiped out.](how-long-do-levies-take-to-replenish/) You cannot raise even partial levies from a province until they are at least 50% replenished. You might just have to wait a long time.
 
 It's also worth noting that naval levies are destroyed when disbanded, not returned to the province like army levies, so if you have recently used your naval levies at all, you will have to wait the full 25 years to raise them all again.
 
